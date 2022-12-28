@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title> L.T. "Ion Creanga" </title>
+	<link rel="stylesheet" href="CSS.css">
+	<script src="https://kit.fontawesome.com/2de94a85e5.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+
+<body>
+
+	<section class="sub-header">
+	<nav>
+		<a href="School Website.html"><img src="images/logo.jpg"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa-solid fa-rectangle-xmark" aria-hidden="true" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="index.html">ACASĂ</a></li>
+				<li><a href="about.html">DESPRE NOI</a></li>
+				<li><a href="course.html">CURSURI</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+				<li><a href="contact.html">CONTACTE</a></li>
+			</ul>
+		</div>
+		<!--- <div class="lang-menu">
+			<div class="selected-lang">
+				Română
+			</div>
+			<ul>
+				<li>
+					<a href="#" class="ro">Română<a/>
+				</li>
+				<li>
+					<a href="#" class="gb">English<a/>
+				</li>
+				<li>
+					<a href="#" class="ru">Русский<a/>
+				</li>
+			</ul>
+		</div> --->
+		<i class="fa-solid fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+	</nav>
+		<h1>Our Certificate & Programs For 2022-2023</h1>
+	</section>
+	
+<!---blog page content--->
+	<section class="blog-content">
+		<div class="row">
+			<div class="blog-left">
+				<img src="images/11.jpg">
+				<h2>Our Certificate & Programs For 2022-2023</h2>
+				<p>Text...</p>
+				<br>
+				<p>Text...</p>
+				<br>
+				<p>Text...</p>
+				<br>
+				<p>Text...</p>
+				<br>
+				<p>Text...</p>
+				<div class="comment-box">
+					<h3>Leave a Comment...</h3>
+					<form class="comment-form" action="form_handeler.php" method='post'>
+						<input type="text" placeholder="Enter Name :" name="name">
+						<input type="email" placeholder="Enter Email :" name="email">
+						<input type="text" placeholder="Enter Subject :" name="subject">
+						<textarea rows="5" placeholder="Your Comment :" name="message"></textarea>
+						<button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+					</form>
+				</div>
+			</div>
+			<div class="blog-right">
+				<h3>Profile de Liceu</h3>
+				<div>
+					<span>Uman</span>
+					<span>1</span>
+				</div>
+				<div>
+					<span>Real</span>
+					<span>1</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!----Footer---->
+	<section class="ab">
+		
+		<div class="row2">
+			<div class="col">
+				<img src="images/logo.jpg" class="logo">
+				<p>L.T. "Ion Creangă" s.Coșnița r.Dubăsari</p>
+			</div>
+			<div class="col">
+				<h3>Contacte : <div class="underline"><span></span></div></h3>
+				<p class="email-id">liceul@mail.com</p>
+				<p>s.Coșnița r.Dubăsari<br>str. Păcii</p>
+				<p>+373 248 44 273</p>
+				<p>Luni - Vineri<br>8:00 - 14:00</p>
+			</div>
+			<div class="col">
+				<h3>Link-uri utile : <div class="underline"><span></span></div></h3>
+				<ul>
+					<li><a href="index.html">ACASĂ</a></li>
+					<li><a href="about.html">DESPRE NOI</a></li>
+					<li><a href="course.html">CURSURI</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACTE</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h3>Rețele de socializare : <div class="underline"><span></span></div></h3>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/ioncreanga09"><i class="fa-brands fa-facebook"></i><a/>
+					<a href="#"><i class="fa-brands fa-youtube"></i><a/>
+					<a href="#"><i class="fa-brands fa-instagram"></i><a/>
+					<a href="#"><i class="fa-brands fa-linkedin"></i><a/>
+					<a href="#"><i class="fa-brands fa-twitter"></i><a/>
+				</div>
+			</div>	
+		</div>
+		<hr>
+		<p>Made with <i class="fa-regular fa-heart"></i> by Ilinka Apelisinka</p>
+	</section>	
+	
+<!----JavaScript for Toggle Menu---->	
+<script>
+	var navLinks = document.getElementById("navLinks");	
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+	
+</body>
+</html>
